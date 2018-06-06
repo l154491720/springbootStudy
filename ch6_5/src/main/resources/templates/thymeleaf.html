@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com"> <!-- 1 -->
+<head>
+    <meta charset="UTF-8";content="text/html"/>
+    <link th:src="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet"/><!-- 2 -->
+    <link th:src="@{bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet"/> <!-- 2 -->
+    <title>Title</title>
+</head>
+<body>
+<!-- 访问model中的数据 -->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">访问model</h3>
+    </div>
+    <div class="panel-body">
+        <span th:text="${singlePerson.name}"></span>
+    </div>
+</div>
+
+<!-- model中的数据迭代 -->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">列表</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item" th:each="person.${people}">
+                <span th:text="${person.name}"></span>
+                <span th:text="${person.age}"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- 数据判断 -->
+<div th:if="${not #lists.isEmpty(people)}">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">列表</h3>
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+                <ul class="list-group">
+                    <li class="list-group" th:each="person:${people}">
+                        <span th:text="${person.name}"></span>
+                        <span th:text="${person.age}"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 在JavaScript中访问model -->
+<script th:inline="javascript">
+    var single = [[${singlePerson}]];
+    console.log(single.name + "/" + single.age)
+</script>
+
+<!-- 需要在html的代码里访问model中的属性(需要在列表后每单击一行后面的按钮获得model中的值) -->
+<li class="list-group-item" th:each="person:{$people}">
+    <span th:text="${person.name}"></span>
+    <span th:text="${person.age}"></span>
+    <button class="btn" th:onclick="'getName(\'+ ${person.name} +')';">获得名字</button>
+</li>
+<!-- 注意格式 th:onclick="'getName(\'' + ${person.name} + '\');" -->
+
+<script th:src="@{jquery-1.10.2.min.js}" type="text/javascript"></script><!-- 2 -->
+<script th:src="@{bootstrap/js/bootstrap.min.js}"></script><!-- 2 -->
+</body>
+</html>
+
+<!--
+①通过xmlns:th=http://www.thymeleaf.com命名空间，将静态页面转换为动态视图。需要进行动态处理的元素将使用
+"th:"为前缀；
+②通过"${}"引用Web静态资源，这在JSP下是极易出错的。
+③使用<span th:text="${singlePerson.name}"></span>访问model中的singlePerson中的name属性。注意:
+需要处理的动态内容需要加上"th:"前缀
+④使用th:each来做循环迭代(th:each="person:${people}"),person作为迭代元素来使用，然后像上面一样访问
+迭代元素中的属性。
+⑤通过${not #lists.isEmpty(people)}表达式判断people是否为空。Thymeleaf支持>、<、>=、<=、==、!=作为
+比较条件，同时也支持将SpringEL表达式语言用于条件中。
+⑥通过th:inline="javascript"添加到script标签，这样JavaScript代码即可访问model中的属性
+⑦通过"[[${}]]"格式获得实际的值。
+-->

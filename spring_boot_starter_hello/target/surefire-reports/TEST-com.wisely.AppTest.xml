@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.wisely.AppTest" time="0.02" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="J:\study\springBootStudy\spring_boot_starter_hello\target\test-classes;J:\study\springBootStudy\spring_boot_starter_hello\target\classes;H:\repository1\org\springframework\boot\spring-boot-autoconfigure\2.0.1.RELEASE\spring-boot-autoconfigure-2.0.1.RELEASE.jar;H:\repository1\org\springframework\boot\spring-boot\2.0.1.RELEASE\spring-boot-2.0.1.RELEASE.jar;H:\repository1\org\springframework\spring-core\5.0.5.RELEASE\spring-core-5.0.5.RELEASE.jar;H:\repository1\org\springframework\spring-jcl\5.0.5.RELEASE\spring-jcl-5.0.5.RELEASE.jar;H:\repository1\org\springframework\spring-context\5.0.5.RELEASE\spring-context-5.0.5.RELEASE.jar;H:\repository1\org\springframework\spring-aop\5.0.5.RELEASE\spring-aop-5.0.5.RELEASE.jar;H:\repository1\org\springframework\spring-beans\5.0.5.RELEASE\spring-beans-5.0.5.RELEASE.jar;H:\repository1\org\springframework\spring-expression\5.0.5.RELEASE\spring-expression-5.0.5.RELEASE.jar;H:\repository1\junit\junit\4.11\junit-4.11.jar;H:\repository1\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="E:\jdk-1.8.61\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire3654759612023007979\surefirebooter7226712818424479556.jar C:\Users\Administrator\AppData\Local\Temp\surefire3654759612023007979 2018-04-21T13-26-57_888-jvmRun1 surefire8127323625814323085tmp surefire_03960795828393589300tmp"/>
+    <property name="surefire.test.class.path" value="J:\study\springBootStudy\spring_boot_starter_hello\target\test-classes;J:\study\springBootStudy\spring_boot_starter_hello\target\classes;H:\repository1\org\springframework\boot\spring-boot-autoconfigure\2.0.1.RELEASE\spring-boot-autoconfigure-2.0.1.RELEASE.jar;H:\repository1\org\springframework\boot\spring-boot\2.0.1.RELEASE\spring-boot-2.0.1.RELEASE.jar;H:\repository1\org\springframework\spring-core\5.0.5.RELEASE\spring-core-5.0.5.RELEASE.jar;H:\repository1\org\springframework\spring-jcl\5.0.5.RELEASE\spring-jcl-5.0.5.RELEASE.jar;H:\repository1\org\springframework\spring-context\5.0.5.RELEASE\spring-context-5.0.5.RELEASE.jar;H:\repository1\org\springframework\spring-aop\5.0.5.RELEASE\spring-aop-5.0.5.RELEASE.jar;H:\repository1\org\springframework\spring-beans\5.0.5.RELEASE\spring-beans-5.0.5.RELEASE.jar;H:\repository1\org\springframework\spring-expression\5.0.5.RELEASE\spring-expression-5.0.5.RELEASE.jar;H:\repository1\junit\junit\4.11\junit-4.11.jar;H:\repository1\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="E:\jdk-1.8.61\jre"/>
+    <property name="basedir" value="J:\study\springBootStudy\spring_boot_starter_hello"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire3654759612023007979\surefirebooter7226712818424479556.jar"/>
+    <property name="sun.boot.class.path" value="E:\jdk-1.8.61\jre\lib\resources.jar;E:\jdk-1.8.61\jre\lib\rt.jar;E:\jdk-1.8.61\jre\lib\sunrsasign.jar;E:\jdk-1.8.61\jre\lib\jsse.jar;E:\jdk-1.8.61\jre\lib\jce.jar;E:\jdk-1.8.61\jre\lib\charsets.jar;E:\jdk-1.8.61\jre\lib\jfr.jar;E:\jdk-1.8.61\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="6.1"/>
+    <property name="java.endorsed.dirs" value="E:\jdk-1.8.61\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="H:\repository1"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2016.3.4"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="user.dir" value="J:\study\springBootStudy\spring_boot_starter_hello"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.library.path" value="E:\jdk-1.8.61\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;E:\Ruby25-x64\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\jdk6\jre\bin;E:\apache-maven-3.2.5\bin;E:\apache-tomcat-7.0.32\bin;E:\jdk6\bin;C:\Program Files\TortoiseSVN\bin;E:\apache-tomcat-7.0.32\lib;E:\apache-tomcat-7.0.32\bin;E:\node\;I:\git\Git\cmd;C:\Users\Administrator\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.ext.dirs" value="E:\jdk-1.8.61\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="com.wisely.AppTest" time="0.001"/>
+</testsuite>

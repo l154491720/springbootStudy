@@ -1,0 +1,6 @@
+com\wisely\highlight_springmvc4\MyMvcConfig.class
+com\wisely\highlight_springmvc4\domain\DemoObj.class
+com\wisely\highlight_springmvc4\WebInitializer.class
+com\wisely\highlight_springmvc4\web\HelloController.class
+com\wisely\highlight_springmvc4\web\ch4_3\DemoAnnotationController.class
+com\wisely\highlight_springmvc4\web\ch4_3\DemoRestController.class

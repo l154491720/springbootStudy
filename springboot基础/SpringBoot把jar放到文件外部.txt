@@ -1,0 +1,20 @@
+将配置文件放到jar外部
+	如果不想使用默认的application.properties，而想将属性文件方法jar包外面，可以使用如下两种方法:
+	
+	只能设置全路径。因为Java -jar运行jar包时，无法指定classpath(无论通过参数还是环境变量，设置的classpath都会被覆盖)。
+	
+	1.命令传参指定spring.config.location
+	java -jar -Dspring.config.location=D:\zTest\config\config1.properties springbootrestdemo-0.0.1-SNAPSHOT.jar
+	还可以用spring.config.location指定路径，这样会在这个路径中去寻找application0{profile}.properties。
+	还可以用spring.config.location指定路径，然后spring.config.name指令配置文件名字。
+	可以用逗号隔开，指定多个路径和名字,然后用spring.config.name指定配置文件名字。
+	可以用逗号隔开，指定多个路径和名字。
+	
+	2.使用@PropertySource注解
+	@SpringBootApplication
+	@PropertySource(value={"file:D:/zTest/config/config1.properties"})
+	public class SpringbootrestdemoApplication{
+		public static void main(String[] agrs){
+			SpringApplication.run(SpringbootrestdemoApplication.class , args);
+		}
+	}

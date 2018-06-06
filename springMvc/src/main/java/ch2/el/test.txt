@@ -1,0 +1,33 @@
+DI(dependency injection)依赖注入
+	
+	指容器负责创建对象和维护对象间的依赖关系，而不是通过对象本身负责自己的创建和解决自己的依赖。
+	Spring IOC容器(ApplicationContext)负责创建Bean，并通过容器将功能类Bean注入到你需要的Bean中。
+	
+Java配置
+	
+	Java配置是通过@Configuration和@Bean来实现的
+	·@Configuration声明当前类是一个配置类，相当于一个Spring配置的xml文件。
+	·@Bean注解在方法上，声明当前方法的返回值为一个Bean。
+	
+	
+AOP(面向切面)
+	
+	Spring支持@Aspect的注解式切面编程
+	(1)使用@Aspect声明是一个切面。
+	(2)使用@After、@Before、@Around定义建言(advice),可直接将拦截规则(切点)作为参数。
+	(3)其中@After、@Before、@Around参数的拦截规则为切点(PointCut),为了使切点复用，可使用@PointCut专门定义拦截规则
+		,然后在@After、@Before、@Around的参数中调用。
+	(4)其中符合条件的每一个拦截处为连接点(JoinPoint)
+	
+Bean的Scope
+	
+	Scope描述是Spring容器如何新建Bean的实例。Spring的Scope有以下几种，通过@Scope注解来实现。
+	(1)Singleton:一个Spring容器中只有一个Bean的实例,此为默认配置，全容器共享一个实例。
+	(2)prototype:每次调用新建一个Bean的实例
+	(3)Request:Web项目中，给每一个http request新建一个Bean实例
+	(4)Session:Web项目中，给每一个http session新建一个Bean实例
+	(5)GlobalSession:这个只在portal应用中有用，给每个global http session新建一个Bean实例
+	
+SpringEL和资源调用
+	
+	
