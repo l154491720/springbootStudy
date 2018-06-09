@@ -21,6 +21,8 @@ public class CustomerRepositoryImpl<T, ID extends Serializable> extends SimpleJp
 
     private final EntityManager entityManager;
 
+
+
     public CustomerRepositoryImpl(Class<T> domainClass, EntityManager entityManager){
         super(domainClass,entityManager);
         this.entityManager = entityManager;

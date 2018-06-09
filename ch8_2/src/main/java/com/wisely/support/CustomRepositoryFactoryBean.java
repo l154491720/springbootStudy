@@ -15,15 +15,12 @@ import java.io.Serializable;
 /**
  * Created by qilin.liu on 2018/6/7.
  */
-public class CustomerRepositoryFactoryBean<T extends JpaRepository<S, ID>,S,ID extends Serializable> extends
+
+public class CustomRepositoryFactoryBean<T extends JpaRepository<S, ID>,S,ID extends Serializable> extends
         JpaRepositoryFactoryBean<T,S,ID>{
 
-    public CustomerRepositoryFactoryBean(Class<? extends T> repositoryInterface) {
-        super(repositoryInterface);
-    }
-
     @Override
-    protected RepositoryFactorySupport createRepositoryFactory(EntityManager entityManager){
+    protected RepositoryFactorySupport createRepositoryFactory(EntityManager entityManager) {
         return new CustomerRepositoryFactory(entityManager);
     }
 
